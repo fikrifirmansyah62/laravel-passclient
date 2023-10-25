@@ -24,3 +24,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/auth/passport', 'Auth\OAuthController@redirect');
 Route::get('/auth/passport/callback', 'Auth\OAuthController@callback');
+Route::get('/auth/passport/refresh', 'Auth\OAuthController@refresh');
